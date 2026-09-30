@@ -108,6 +108,27 @@
     let idx = 0;
     const total = slides.length;
 
+    /* Speaker-script edits are private to this browser and this deck URL. */
+    const NOTES_STORAGE_KEY = 'html-ppt-speaker-notes:' + location.pathname;
+    const noteElements = slides.map(s => s.querySelector('.notes, aside.notes, .speaker-notes'));
+    const defaultNotesHTML = noteElements.map(note => note ? note.innerHTML : '');
+    function plainToNotesHTML(value) {
+      const escaped = String(value).trim().replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      return escaped ? escaped.split(/\n\s*\n/).map(p => '<p>' + p.replace(/\n/g, '<br>') + '</p>').join('') : '';
+    }
+    function readNotesEdits() {
+      try {
+        const data = JSON.parse(localStorage.getItem(NOTES_STORAGE_KEY) || '{}');
+        return data && data.version === 1 && data.notes && typeof data.notes === 'object' ? data.notes : {};
+      } catch(e) { return {}; }
+    }
+    function applyNoteEdit(i, value) {
+      if (!Number.isInteger(i) || i < 0 || i >= total || !noteElements[i]) return;
+      noteElements[i].innerHTML = value === null ? defaultNotesHTML[i] : plainToNotesHTML(value);
+      if (i === idx) notes.innerHTML = noteElements[i].innerHTML;
+    }
+
     /* ===== BroadcastChannel for presenter sync ===== */
     const CHANNEL_NAME = 'html-ppt-presenter-' + location.pathname;
     let bc;
@@ -133,6 +154,9 @@
       notes.className = 'notes-overlay';
       document.body.appendChild(notes);
     }
+    Object.entries(readNotesEdits()).forEach(([key, value]) => {
+      if (typeof value === 'string') applyNoteEdit(Number(key), value);
+    });
 
     /* ===== overview grid (O key) ===== */
     let overview = document.querySelector('.overview');
@@ -279,6 +303,10 @@
           const i = themes.indexOf(e.data.name);
           if (i >= 0) themeIdx = i;
           applyTheme(e.data.name);
+        } else if (e.data.type === 'notes-update' && typeof e.data.idx === 'number' && typeof e.data.text === 'string') {
+          applyNoteEdit(e.data.idx, e.data.text);
+        } else if (e.data.type === 'notes-reset' && typeof e.data.idx === 'number') {
+          applyNoteEdit(e.data.idx, null);
         }
       };
     }
@@ -320,13 +348,16 @@
       // Build absolute URL of THIS deck file (without hash/query)
       const deckUrl = location.protocol + '//' + location.host + location.pathname;
 
-      // Collect slide titles + notes (HTML strings)
+      // Preserve the published scripts so each page can be restored later.
       const slideMeta = slides.map((s, i) => {
-        const note = s.querySelector('.notes, aside.notes, .speaker-notes');
+        const source = document.createElement('div');
+        source.innerHTML = defaultNotesHTML[i];
+        const paragraphs = Array.from(source.querySelectorAll('p'));
         return {
           title: s.getAttribute('data-title') ||
             (s.querySelector('h1,h2,h3')||{}).textContent || ('Slide '+(i+1)),
-          notes: note ? note.innerHTML : ''
+          notes: defaultNotesHTML[i],
+          text: paragraphs.length ? paragraphs.map(p => p.textContent.trim()).join('\n\n') : source.textContent.trim()
         };
       });
 
@@ -345,11 +376,12 @@
     }
 
     function buildPresenterHTML(deckUrl, slideMeta, total, startIdx, channelName, currentTheme) {
-      const metaJSON = JSON.stringify(slideMeta);
+      const metaJSON = JSON.stringify(slideMeta).replace(/</g, '\\u003c');
       const deckUrlJSON = JSON.stringify(deckUrl);
       const channelJSON = JSON.stringify(channelName);
       const themeJSON = JSON.stringify(currentTheme || '');
       const storageKey = 'html-ppt-presenter:' + location.pathname;
+      const notesKeyJSON = JSON.stringify(NOTES_STORAGE_KEY);
 
       // Build the document as a single template string for clarity
       return `<!DOCTYPE html>
@@ -439,6 +471,26 @@
     background: rgba(255,255,255,.08); padding: 1px 6px; border-radius: 4px;
   }
   .pcard-notes .empty { color: #484f58; font-style: italic; }
+  .pcard-notes .pcard-body[hidden] { display: none; }
+  .notes-editor {
+    width: 100%; resize: none; border: 0; outline: 0;
+    background: #0d1117; color: #e6edf3;
+    font: 18px/1.75 "Noto Sans SC", -apple-system, sans-serif;
+  }
+  .notes-actions { display: flex; align-items: center; gap: 6px; }
+  .notes-btn {
+    background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.13);
+    border-radius: 5px; color: #d0d7de; padding: 3px 8px;
+    font-family: inherit; font-size: 11px; line-height: 1.4;
+    cursor: pointer; white-space: nowrap;
+  }
+  .notes-btn:hover { border-color: #58a6ff; color: #fff; }
+  .notes-footer {
+    display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+    padding: 6px 10px; border-top: 1px solid rgba(255,255,255,.08);
+    color: #8b949e; font-size: 11px;
+  }
+  .notes-footer .notes-status { flex: 1; min-width: 170px; }
 
   /* Timer card */
   .pcard-timer .pcard-body {
@@ -540,8 +592,17 @@
     <div class="pcard-head" data-drag>
       <span class="pcard-dot"></span>
       <span class="pcard-title">SPEAKER SCRIPT · 逐字稿</span>
+      <div class="notes-actions"><button class="notes-btn" id="btn-edit-notes" type="button">编辑讲稿</button></div>
     </div>
     <div class="pcard-body" id="notes-body"></div>
+    <textarea class="pcard-body notes-editor" id="notes-editor" aria-label="编辑本页讲稿" hidden></textarea>
+    <div class="notes-footer">
+      <span class="notes-status" id="notes-status">修改仅保存在此浏览器；可导出后转移设备</span>
+      <button class="notes-btn" id="btn-restore-notes" type="button">恢复原稿</button>
+      <button class="notes-btn" id="btn-export-notes" type="button">导出</button>
+      <button class="notes-btn" id="btn-import-notes" type="button">导入</button>
+      <input id="notes-import-file" type="file" accept=".json,application/json" hidden>
+    </div>
     <div class="pcard-resize" data-resize></div>
   </div>
 
@@ -581,16 +642,60 @@
   var idx = ${startIdx};
   var deckUrl = ${deckUrlJSON};
   var STORAGE_KEY = ${JSON.stringify(storageKey)};
+  var NOTES_KEY = ${notesKeyJSON};
   var bc;
   try { bc = new BroadcastChannel(${channelJSON}); } catch(e) {}
 
   var iframeCur = document.getElementById('iframe-cur');
   var iframeNxt = document.getElementById('iframe-nxt');
   var notesBody = document.getElementById('notes-body');
+  var notesEditor = document.getElementById('notes-editor');
+  var notesStatus = document.getElementById('notes-status');
+  var editNotesButton = document.getElementById('btn-edit-notes');
   var curMeta = document.getElementById('cur-meta');
   var nxtMeta = document.getElementById('nxt-meta');
   var timerDisplay = document.getElementById('timer-display');
   var timerCount = document.getElementById('timer-count');
+
+  /* Plain-text edits cannot inject HTML into the presenter or audience view. */
+  var editingNotes = false;
+  function readNotesEdits() {
+    try {
+      var data = JSON.parse(localStorage.getItem(NOTES_KEY) || '{}');
+      return data && data.version === 1 && data.notes && typeof data.notes === 'object' ? data.notes : {};
+    } catch(e) { return {}; }
+  }
+  var noteEdits = readNotesEdits();
+  function saveNotesEdits() {
+    try {
+      localStorage.setItem(NOTES_KEY, JSON.stringify({version: 1, notes: noteEdits}));
+      notesStatus.textContent = '已自动保存到此浏览器；导出可转移设备';
+    } catch(e) {
+      notesStatus.textContent = '浏览器无法保存；请复制讲稿或检查存储设置';
+    }
+  }
+  function escapeText(value) {
+    return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function plainToHtml(value) {
+    var escaped = escapeText(value.trim());
+    return escaped ? escaped.split(/\\n\\s*\\n/).map(function(p){
+      return '<p>' + p.replace(/\\n/g, '<br>') + '</p>';
+    }).join('') : '';
+  }
+  function currentNoteText(n) {
+    return Object.prototype.hasOwnProperty.call(noteEdits, n) ? noteEdits[n] : slideMeta[n].text;
+  }
+  function currentNoteHtml(n) {
+    return Object.prototype.hasOwnProperty.call(noteEdits, n) ? plainToHtml(noteEdits[n]) : slideMeta[n].notes;
+  }
+  function renderNotes(n) {
+    notesBody.innerHTML = currentNoteHtml(n) || '<span class="empty">（这一页还没有逐字稿）</span>';
+    notesEditor.value = currentNoteText(n);
+    notesBody.hidden = editingNotes;
+    notesEditor.hidden = !editingNotes;
+  }
 
   /* ===== Default card layout ===== */
   function defaultLayout() {
@@ -664,6 +769,7 @@
   document.querySelectorAll('[data-drag]').forEach(function(handle){
     handle.addEventListener('mousedown', function(e){
       if (e.button !== 0) return;
+      if (e.target.closest('button, input, textarea, label')) return;
       var card = handle.closest('.pcard');
       if (!card) return;
       e.preventDefault();
@@ -786,8 +892,7 @@
     }
 
     /* Notes */
-    var note = slideMeta[n].notes;
-    notesBody.innerHTML = note || '<span class="empty">（这一页还没有逐字稿）</span>';
+    renderNotes(n);
 
     /* Timer count */
     timerCount.textContent = (n + 1) + ' / ' + total;
@@ -828,6 +933,73 @@
   document.getElementById('btn-prev').addEventListener('click', function(){ go(idx - 1); });
   document.getElementById('btn-next').addEventListener('click', function(){ go(idx + 1); });
   document.getElementById('btn-reset').addEventListener('click', resetTimer);
+  editNotesButton.addEventListener('click', function(){
+    editingNotes = !editingNotes;
+    editNotesButton.textContent = editingNotes ? '完成编辑' : '编辑讲稿';
+    renderNotes(idx);
+    if (editingNotes) notesEditor.focus();
+  });
+  notesEditor.addEventListener('input', function(){
+    noteEdits[idx] = notesEditor.value;
+    saveNotesEdits();
+    notesBody.innerHTML = currentNoteHtml(idx) || '<span class="empty">（这一页还没有逐字稿）</span>';
+    if (bc) bc.postMessage({type: 'notes-update', idx: idx, text: noteEdits[idx]});
+  });
+  document.getElementById('btn-restore-notes').addEventListener('click', function(){
+    if (!confirm('恢复这一页的原始讲稿？当前修改会被删除。')) return;
+    delete noteEdits[idx];
+    saveNotesEdits();
+    renderNotes(idx);
+    if (bc) bc.postMessage({type: 'notes-reset', idx: idx});
+  });
+  document.getElementById('btn-export-notes').addEventListener('click', function(){
+    var content = JSON.stringify({format: 'html-ppt-speaker-notes', version: 1, notes: noteEdits}, null, 2);
+    var url = URL.createObjectURL(new Blob([content], {type: 'application/json'}));
+    var link = document.createElement('a');
+    link.href = url;
+    link.download = 'in2s2se-ai4s-speaker-notes.json';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+    notesStatus.textContent = '讲稿修改已导出，可在其他设备导入';
+  });
+  var notesImportFile = document.getElementById('notes-import-file');
+  document.getElementById('btn-import-notes').addEventListener('click', function(){ notesImportFile.click(); });
+  notesImportFile.addEventListener('change', function(){
+    var file = notesImportFile.files && notesImportFile.files[0];
+    if (!file) return;
+    file.text().then(function(content){
+      var data = JSON.parse(content);
+      if (data.format !== 'html-ppt-speaker-notes' || data.version !== 1 ||
+          !data.notes || typeof data.notes !== 'object' || Array.isArray(data.notes)) {
+        throw new Error('讲稿文件格式不正确');
+      }
+      var imported = {};
+      Object.entries(data.notes).forEach(function(entry){
+        var n = Number(entry[0]);
+        if (!Number.isInteger(n) || n < 0 || n >= total || typeof entry[1] !== 'string') {
+          throw new Error('讲稿页码或内容不正确');
+        }
+        imported[n] = entry[1];
+      });
+      noteEdits = imported;
+      saveNotesEdits();
+      renderNotes(idx);
+      if (bc) {
+        for (var n=0; n<total; n++) {
+          if (Object.prototype.hasOwnProperty.call(noteEdits, n)) {
+            bc.postMessage({type: 'notes-update', idx: n, text: noteEdits[n]});
+          } else {
+            bc.postMessage({type: 'notes-reset', idx: n});
+          }
+        }
+      }
+      notesStatus.textContent = '已导入讲稿修改，并保存在此浏览器';
+    }).catch(function(err){
+      notesStatus.textContent = '导入失败：' + err.message;
+    }).finally(function(){ notesImportFile.value = ''; });
+  });
   document.getElementById('reset-layout').addEventListener('click', function(){
     if (confirm('恢复默认卡片布局？')) {
       try { localStorage.removeItem(STORAGE_KEY); } catch(e){}
@@ -838,6 +1010,16 @@
   /* ===== Keyboard ===== */
   document.addEventListener('keydown', function(e){
     if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.target.matches('textarea, input, [contenteditable]')) {
+      if (e.key === 'Escape') {
+        editingNotes = false;
+        editNotesButton.textContent = '编辑讲稿';
+        renderNotes(idx);
+        editNotesButton.focus();
+        e.preventDefault();
+      }
+      return;
+    }
     switch(e.key) {
       case 'ArrowRight': case ' ': case 'PageDown': go(idx + 1); e.preventDefault(); break;
       case 'ArrowLeft':  case 'PageUp':   go(idx - 1); e.preventDefault(); break;
@@ -861,7 +1043,7 @@
   iframeCur.src = deckUrl + '?preview=' + (idx + 1);
   if (idx + 1 < total) iframeNxt.src = deckUrl + '?preview=' + (idx + 2);
   /* Initialize notes/timer/count without touching iframes */
-  notesBody.innerHTML = slideMeta[idx].notes || '<span class="empty">（这一页还没有逐字稿）</span>';
+  renderNotes(idx);
   curMeta.textContent = (idx + 1) + '/' + total;
   nxtMeta.textContent = (idx + 2) + '/' + total;
   timerCount.textContent = (idx + 1) + ' / ' + total;
