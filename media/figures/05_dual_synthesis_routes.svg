@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="两条候选合成路线和竞争过程">
+  <title>两条候选合成路线和竞争过程</title>
+  <desc>两条未证实的候选合成路线，强调竞争过程和条件性步骤。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9" fill="none" stroke="#718B99" stroke-width="1.6"/>
+    </marker>
+  </defs>
+  <style>text{font-family:Arial,"PingFang SC","Noto Sans CJK SC",sans-serif;letter-spacing:.2px}</style>
+  <rect width="1200" height="650" fill="#FAFAF7"/>
+  <rect x="52" y="39" width="122" height="36" rx="18" fill="#E7EEF0" stroke="#E7EEF0" stroke-width="0"/>
+  <text x="113.0" y="64" fill="#718B99" font-size="17" font-weight="600" text-anchor="middle">路线 A</text>
+  <rect x="52" y="309" width="122" height="36" rx="18" fill="#E9F0EA" stroke="#E9F0EA" stroke-width="0"/>
+  <text x="113.0" y="334" fill="#93A999" font-size="17" font-weight="600" text-anchor="middle">路线 B</text>
+  <rect x="60" y="105" width="330" height="120" rx="16" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <text x="225" y="178" fill="#33434A" font-size="28" font-weight="600" text-anchor="middle">α-In₂Se₃</text>
+  <line x1="396" y1="165" x2="442" y2="165" stroke="#718B99" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <rect x="452" y="105" width="330" height="120" rx="16" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <text x="617" y="178" fill="#33434A" font-size="26" font-weight="600" text-anchor="middle">In₂SSe₂</text>
+  <line x1="788" y1="165" x2="834" y2="165" stroke="#718B99" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="6 7"/>
+  <rect x="844" y="105" width="330" height="120" rx="16" fill="#FFFFFF" stroke="#718B99" stroke-width="1.5"/>
+  <text x="1009" y="178" fill="#33434A" font-size="28" font-weight="600" text-anchor="middle">b-In₂S₂Se</text>
+  <rect x="60" y="374" width="330" height="120" rx="16" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <text x="225" y="447" fill="#33434A" font-size="28" font-weight="600" text-anchor="middle">γ-In₂S₃</text>
+  <line x1="396" y1="434" x2="442" y2="434" stroke="#718B99" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <rect x="452" y="374" width="330" height="120" rx="16" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <text x="617" y="447" fill="#33434A" font-size="26" font-weight="600" text-anchor="middle">单侧 Se 交换</text>
+  <line x1="788" y1="434" x2="834" y2="434" stroke="#718B99" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <rect x="844" y="374" width="330" height="120" rx="16" fill="#FFFFFF" stroke="#93A999" stroke-width="1.5"/>
+  <text x="1009" y="447" fill="#33434A" font-size="28" font-weight="600" text-anchor="middle">b-In₂S₂Se</text>
+  <text x="452" y="91" fill="#6F7B7C" font-size="17" font-weight="500" text-anchor="middle">外层硫化</text>
+  <text x="843" y="91" fill="#6F7B7C" font-size="17" font-weight="500" text-anchor="middle">中央层：条件性探索</text>
+  <text x="452" y="360" fill="#6F7B7C" font-size="17" font-weight="500" text-anchor="middle">母体配位先核对</text>
+  <text x="844" y="360" fill="#6F7B7C" font-size="17" font-weight="500" text-anchor="middle">层序待确证</text>
+  <rect x="60" y="544" width="1080" height="51" rx="13" fill="#EEF1ED" stroke="#EEF1ED" stroke-width="0"/>
+  <text x="600" y="577" fill="#6F7B7C" font-size="21" font-weight="500" text-anchor="middle">共同竞争：选择性交换   /   S–Se 混排   /   五层骨架损伤</text>
+  <line x1="52" y1="606" x2="1148" y2="606" stroke="#C9D0CC" stroke-width="1" stroke-linecap="round"/>
+  <text x="54" y="630" fill="#6F7B7C" font-size="15" font-weight="400" text-anchor="start">虚线步骤为高风险条件性探索；两条路线均为本项目假设，非已报道合成</text>
+</svg>

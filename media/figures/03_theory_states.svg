@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="b-In₂S₂Se 的理论结构功能假说">
+  <title>b-In₂S₂Se 的理论结构功能假说</title>
+  <desc>WZ′ 和 ZB′ 两种理论态的 HSE06 带隙与示意层序。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9" fill="none" stroke="#718B99" stroke-width="1.6"/>
+    </marker>
+  </defs>
+  <style>text{font-family:Arial,"PingFang SC","Noto Sans CJK SC",sans-serif;letter-spacing:.2px}</style>
+  <rect width="1200" height="650" fill="#FAFAF7"/>
+  <rect x="70" y="44" width="154" height="36" rx="18" fill="#F4EBE6" stroke="#F4EBE6" stroke-width="0"/>
+  <text x="147.0" y="69" fill="#B98B7B" font-size="17" font-weight="600" text-anchor="middle">理论预测</text>
+  <rect x="72" y="112" width="432" height="424" rx="18" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <rect x="97" y="137" width="104" height="36" rx="18" fill="#E7EEF0" stroke="#E7EEF0" stroke-width="0"/>
+  <text x="149.0" y="162" fill="#718B99" font-size="17" font-weight="600" text-anchor="middle">WZ′</text>
+  <circle cx="230" cy="205" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="261" cy="205" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="292" cy="205" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="323" cy="205" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="354" cy="205" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="191" y="211" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <circle cx="223" cy="247" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="254" cy="247" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="285" cy="247" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="316" cy="247" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="347" cy="247" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="191" y="253" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="230" cy="289" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="261" cy="289" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="292" cy="289" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="323" cy="289" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="354" cy="289" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="191" y="295" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <circle cx="223" cy="331" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="254" cy="331" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="285" cy="331" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="316" cy="331" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="347" cy="331" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="191" y="337" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="230" cy="373" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="261" cy="373" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="292" cy="373" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="323" cy="373" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="354" cy="373" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="191" y="379" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">Se</text>
+  <line x1="104" y1="444" x2="472" y2="444" stroke="#C9D0CC" stroke-width="1.3" stroke-linecap="round"/>
+  <text x="108" y="488" fill="#718B99" font-size="30" font-weight="700" text-anchor="start">2.19 eV</text>
+  <text x="331" y="487" fill="#6F7B7C" font-size="20" font-weight="500" text-anchor="start">间接带隙</text>
+  <rect x="694" y="112" width="432" height="424" rx="18" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <rect x="719" y="137" width="104" height="36" rx="18" fill="#F4EBE6" stroke="#F4EBE6" stroke-width="0"/>
+  <text x="771.0" y="162" fill="#B98B7B" font-size="17" font-weight="600" text-anchor="middle">ZB′</text>
+  <circle cx="852" cy="205" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="883" cy="205" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="914" cy="205" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="945" cy="205" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="976" cy="205" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="813" y="211" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <circle cx="861" cy="247" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="892" cy="247" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="923" cy="247" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="954" cy="247" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="985" cy="247" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="813" y="253" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="852" cy="289" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="883" cy="289" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="914" cy="289" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="945" cy="289" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="976" cy="289" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="813" y="295" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <circle cx="861" cy="331" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="892" cy="331" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="923" cy="331" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="954" cy="331" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="985" cy="331" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="813" y="337" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="852" cy="373" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="883" cy="373" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="914" cy="373" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="945" cy="373" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="976" cy="373" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="813" y="379" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">Se</text>
+  <line x1="726" y1="444" x2="1094" y2="444" stroke="#C9D0CC" stroke-width="1.3" stroke-linecap="round"/>
+  <text x="730" y="488" fill="#B98B7B" font-size="30" font-weight="700" text-anchor="start">1.17 eV</text>
+  <text x="953" y="487" fill="#6F7B7C" font-size="20" font-weight="500" text-anchor="start">直接带隙</text>
+  <line x1="515" y1="317" x2="680" y2="317" stroke="#718B99" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="679" y1="344" x2="518" y2="344" stroke="#B98B7B" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="596" y="286" fill="#6F7B7C" font-size="21" font-weight="500" text-anchor="middle">滑移切换</text>
+  <line x1="52" y1="606" x2="1148" y2="606" stroke="#C9D0CC" stroke-width="1" stroke-linecap="round"/>
+  <text x="54" y="630" fill="#6F7B7C" font-size="15" font-weight="400" text-anchor="start">据 Li et al., Advanced Science (2026) 的理论结果绘制；层序为概念示意</text>
+</svg>

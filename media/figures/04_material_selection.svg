@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="双母体通向 b-In₂S₂Se 的体系选择">
+  <title>双母体通向 b-In₂S₂Se 的体系选择</title>
+  <desc>从 α-In₂Se₃ 和 γ-In₂S₃ 两种母体探索五层目标。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9" fill="none" stroke="#718B99" stroke-width="1.6"/>
+    </marker>
+  </defs>
+  <style>text{font-family:Arial,"PingFang SC","Noto Sans CJK SC",sans-serif;letter-spacing:.2px}</style>
+  <rect width="1200" height="650" fill="#FAFAF7"/>
+  <rect x="52" y="78" width="328" height="472" rx="18" fill="#FFFFFF" stroke="#718B99" stroke-width="1.5"/>
+  <rect x="72" y="101" width="140" height="36" rx="18" fill="#E7EEF0" stroke="#E7EEF0" stroke-width="0"/>
+  <text x="142.0" y="126" fill="#718B99" font-size="17" font-weight="600" text-anchor="middle">路线 A 母体</text>
+  <text x="216" y="183" fill="#33434A" font-size="29" font-weight="700" text-anchor="middle">α-In₂Se₃</text>
+  <circle cx="169" cy="236" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="199" cy="236" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="229" cy="236" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="259" cy="236" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="289" cy="236" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="131" y="242" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">Se</text>
+  <circle cx="169" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="199" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="229" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="259" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="289" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="131" y="284" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="169" cy="320" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="199" cy="320" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="229" cy="320" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="259" cy="320" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="289" cy="320" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="131" y="326" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">Se</text>
+  <circle cx="169" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="199" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="229" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="259" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="289" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="131" y="368" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="169" cy="404" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="199" cy="404" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="229" cy="404" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="259" cy="404" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="289" cy="404" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="131" y="410" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">Se</text>
+  <line x1="77" y1="465" x2="355" y2="465" stroke="#C9D0CC" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="216" y="509" fill="#6F7B7C" font-size="19" font-weight="400" text-anchor="middle">单层生长已有先例</text>
+  <rect x="436" y="78" width="328" height="472" rx="18" fill="#FFFFFF" stroke="#B98B7B" stroke-width="1.5"/>
+  <rect x="456" y="101" width="140" height="36" rx="18" fill="#F4EBE6" stroke="#F4EBE6" stroke-width="0"/>
+  <text x="526.0" y="126" fill="#B98B7B" font-size="17" font-weight="600" text-anchor="middle">最终目标</text>
+  <text x="600" y="183" fill="#33434A" font-size="29" font-weight="700" text-anchor="middle">b-In₂S₂Se</text>
+  <circle cx="553" cy="236" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="583" cy="236" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="613" cy="236" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="643" cy="236" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="673" cy="236" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="515" y="242" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <circle cx="553" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="583" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="613" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="643" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="673" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="515" y="284" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="553" cy="320" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="583" cy="320" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="613" cy="320" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="643" cy="320" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="673" cy="320" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="515" y="326" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <circle cx="553" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="583" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="613" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="643" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="673" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="515" y="368" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="553" cy="404" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="583" cy="404" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="613" cy="404" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="643" cy="404" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="673" cy="404" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="515" y="410" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">Se</text>
+  <line x1="461" y1="465" x2="739" y2="465" stroke="#C9D0CC" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="600" y="509" fill="#6F7B7C" font-size="19" font-weight="400" text-anchor="middle">目标层序须实验确证</text>
+  <rect x="820" y="78" width="328" height="472" rx="18" fill="#FFFFFF" stroke="#93A999" stroke-width="1.5"/>
+  <rect x="840" y="101" width="140" height="36" rx="18" fill="#E9F0EA" stroke="#E9F0EA" stroke-width="0"/>
+  <text x="910.0" y="126" fill="#93A999" font-size="17" font-weight="600" text-anchor="middle">路线 B 母体</text>
+  <text x="984" y="183" fill="#33434A" font-size="29" font-weight="700" text-anchor="middle">γ-In₂S₃</text>
+  <circle cx="937" cy="236" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="967" cy="236" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="997" cy="236" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="1027" cy="236" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="1057" cy="236" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="899" y="242" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <circle cx="937" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="967" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="997" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="1027" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="1057" cy="278" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="899" y="284" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="937" cy="320" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="967" cy="320" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="997" cy="320" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="1027" cy="320" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="1057" cy="320" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="899" y="326" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <circle cx="937" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="967" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="997" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="1027" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="1057" cy="362" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="899" y="368" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="937" cy="404" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="967" cy="404" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="997" cy="404" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="1027" cy="404" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="1057" cy="404" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="899" y="410" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <line x1="845" y1="465" x2="1123" y2="465" stroke="#C9D0CC" stroke-width="1.2" stroke-linecap="round"/>
+  <text x="984" y="509" fill="#6F7B7C" font-size="19" font-weight="400" text-anchor="middle">五层层片／纳米带先例</text>
+  <text x="410" y="330" fill="#718B99" font-size="34" font-weight="600" text-anchor="middle">→</text>
+  <text x="794" y="330" fill="#93A999" font-size="34" font-weight="600" text-anchor="middle">←</text>
+  <line x1="52" y1="606" x2="1148" y2="606" stroke="#C9D0CC" stroke-width="1" stroke-linecap="round"/>
+  <text x="54" y="630" fill="#6F7B7C" font-size="15" font-weight="400" text-anchor="start">层序示意；γ-In₂S₃ 的单层、配位和目标态相容性仍待检验</text>
+</svg>

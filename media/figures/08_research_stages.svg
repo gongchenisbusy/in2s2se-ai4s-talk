@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="研究内容按四个验证阶段推进">
+  <title>研究内容按四个验证阶段推进</title>
+  <desc>四个研究内容阶段，没有时间刻度。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9" fill="none" stroke="#718B99" stroke-width="1.6"/>
+    </marker>
+  </defs>
+  <style>text{font-family:Arial,"PingFang SC","Noto Sans CJK SC",sans-serif;letter-spacing:.2px}</style>
+  <rect width="1200" height="650" fill="#FAFAF7"/>
+  <rect x="52" y="169" width="220" height="302" rx="17" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <rect x="72" y="190" width="100" height="36" rx="18" fill="#E7EEF0" stroke="#E7EEF0" stroke-width="0"/>
+  <text x="122.0" y="215" fill="#718B99" font-size="17" font-weight="600" text-anchor="middle">阶段一</text>
+  <text x="76" y="286" fill="#33434A" font-size="25" font-weight="650" text-anchor="start">母体与路径</text>
+  <text x="76" y="341" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">复现母体</text>
+  <text x="76" y="375" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">筛选反应路径</text>
+  <circle cx="162" cy="455" r="8" fill="#718B99" stroke="#FFFFFF" stroke-width="0"/>
+  <rect x="344" y="169" width="220" height="302" rx="17" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <rect x="364" y="190" width="100" height="36" rx="18" fill="#E9F0EA" stroke="#E9F0EA" stroke-width="0"/>
+  <text x="414.0" y="215" fill="#93A999" font-size="17" font-weight="600" text-anchor="middle">阶段二</text>
+  <text x="368" y="286" fill="#33434A" font-size="25" font-weight="650" text-anchor="start">选择性交换</text>
+  <text x="368" y="341" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">追踪中断样品</text>
+  <text x="368" y="375" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">排查混排与损伤</text>
+  <circle cx="454" cy="455" r="8" fill="#93A999" stroke="#FFFFFF" stroke-width="0"/>
+  <rect x="636" y="169" width="220" height="302" rx="17" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <rect x="656" y="190" width="100" height="36" rx="18" fill="#F4EBE6" stroke="#F4EBE6" stroke-width="0"/>
+  <text x="706.0" y="215" fill="#B98B7B" font-size="17" font-weight="600" text-anchor="middle">阶段三</text>
+  <text x="660" y="286" fill="#33434A" font-size="25" font-weight="650" text-anchor="start">层序确证</text>
+  <text x="660" y="341" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">正交结构证据</text>
+  <text x="660" y="375" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">检验跨批次复现</text>
+  <circle cx="746" cy="455" r="8" fill="#B98B7B" stroke="#FFFFFF" stroke-width="0"/>
+  <rect x="928" y="169" width="220" height="302" rx="17" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <rect x="948" y="190" width="100" height="36" rx="18" fill="#E7EEF0" stroke="#E7EEF0" stroke-width="0"/>
+  <text x="998.0" y="215" fill="#718B99" font-size="17" font-weight="600" text-anchor="middle">阶段四</text>
+  <text x="952" y="286" fill="#33434A" font-size="25" font-weight="650" text-anchor="start">功能与 AI 对照</text>
+  <text x="952" y="341" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">检验两态光电</text>
+  <text x="952" y="375" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">量化决策增益</text>
+  <circle cx="1038" cy="455" r="8" fill="#718B99" stroke="#FFFFFF" stroke-width="0"/>
+  <line x1="278" y1="321" x2="335" y2="321" stroke="#718B99" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="570" y1="321" x2="627" y2="321" stroke="#718B99" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="862" y1="321" x2="919" y2="321" stroke="#718B99" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="600" y="111" fill="#6F7B7C" font-size="25" font-weight="500" text-anchor="middle">门槛推进 · 满足证据后进入下一阶段</text>
+  <line x1="52" y1="606" x2="1148" y2="606" stroke="#C9D0CC" stroke-width="1" stroke-linecap="round"/>
+  <text x="54" y="630" fill="#6F7B7C" font-size="15" font-weight="400" text-anchor="start">按研究内容与验证门槛组织</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="结构、可翻转极化和零偏压光响应的三级验证">
+  <title>结构、可翻转极化和零偏压光响应的三级验证</title>
+  <desc>先证五层结构，再证可逆切换，最后测试零偏压光响应。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9" fill="none" stroke="#718B99" stroke-width="1.6"/>
+    </marker>
+  </defs>
+  <style>text{font-family:Arial,"PingFang SC","Noto Sans CJK SC",sans-serif;letter-spacing:.2px}</style>
+  <rect width="1200" height="650" fill="#FAFAF7"/>
+  <rect x="50" y="96" width="316" height="442" rx="18" fill="#FFFFFF" stroke="#93A999" stroke-width="1.5"/>
+  <text x="78" y="153" fill="#33434A" font-size="27" font-weight="650" text-anchor="start">1 结构确证</text>
+  <text x="78" y="192" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">层序＋In 位配准</text>
+  <rect x="442" y="96" width="316" height="442" rx="18" fill="#FFFFFF" stroke="#718B99" stroke-width="1.5"/>
+  <text x="470" y="153" fill="#33434A" font-size="27" font-weight="650" text-anchor="start">2 极化切换</text>
+  <text x="470" y="192" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">可逆且可保持</text>
+  <rect x="834" y="96" width="316" height="442" rx="18" fill="#FFFFFF" stroke="#B98B7B" stroke-width="1.5"/>
+  <text x="862" y="153" fill="#33434A" font-size="27" font-weight="650" text-anchor="start">3 光电验证</text>
+  <text x="862" y="192" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">写入态改变零偏压响应</text>
+  <circle cx="156" cy="250" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="187" cy="250" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="218" cy="250" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="249" cy="250" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="280" cy="250" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="156" cy="293" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="187" cy="293" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="218" cy="293" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="249" cy="293" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="280" cy="293" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="156" cy="336" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="187" cy="336" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="218" cy="336" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="249" cy="336" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="280" cy="336" r="10" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="156" cy="379" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="187" cy="379" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="218" cy="379" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="249" cy="379" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="280" cy="379" r="10" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="156" cy="422" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="187" cy="422" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="218" cy="422" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="249" cy="422" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="280" cy="422" r="10" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="218" y="501" fill="#6F7B7C" font-size="19" font-weight="500" text-anchor="middle">S–In–S–In–Se</text>
+  <line x1="599" y1="275" x2="599" y2="418" stroke="#718B99" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="671" y1="419" x2="671" y2="276" stroke="#B98B7B" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="635" y="485" fill="#6F7B7C" font-size="20" font-weight="550" text-anchor="middle">WZ′  ↔  ZB′</text>
+  <line x1="874" y1="432" x2="1112" y2="432" stroke="#C9D0CC" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="874" y1="432" x2="874" y2="258" stroke="#C9D0CC" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M887 393 C935 391 957 361 980 331 S1054 307 1097 315" stroke="#718B99" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M887 407 C935 405 955 378 985 368 S1054 343 1097 350" stroke="#B98B7B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="996" y="492" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="middle">两态响应示意</text>
+  <text x="1016" y="270" fill="#6F7B7C" font-size="20" font-weight="500" text-anchor="start">Iₛ꜀</text>
+  <text x="1099" y="458" fill="#6F7B7C" font-size="18" font-weight="400" text-anchor="start">光强</text>
+  <line x1="370" y1="324" x2="433" y2="324" stroke="#718B99" stroke-width="2.3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="762" y1="324" x2="825" y2="324" stroke="#718B99" stroke-width="2.3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="52" y1="606" x2="1148" y2="606" stroke="#C9D0CC" stroke-width="1" stroke-linecap="round"/>
+  <text x="54" y="630" fill="#6F7B7C" font-size="15" font-weight="400" text-anchor="start">右侧曲线仅示意预期判据，非已有实验或计算数据</text>
+</svg>

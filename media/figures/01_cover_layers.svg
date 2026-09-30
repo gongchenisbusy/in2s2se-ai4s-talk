@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="封面：五层 Janus In₂S₂Se 层序">
+  <title>封面：五层 Janus In₂S₂Se 层序</title>
+  <desc>用五排元素点表示 S–In–S–In–Se，连接理论预测与实验实现。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9" fill="none" stroke="#718B99" stroke-width="1.6"/>
+    </marker>
+  </defs>
+  <style>text{font-family:Arial,"PingFang SC","Noto Sans CJK SC",sans-serif;letter-spacing:.2px}</style>
+  <rect width="1200" height="650" fill="#FAFAF7"/>
+  <rect x="68" y="58" width="146" height="36" rx="18" fill="#E7EEF0" stroke="#E7EEF0" stroke-width="0"/>
+  <text x="141.0" y="83" fill="#718B99" font-size="17" font-weight="600" text-anchor="middle">目标材料</text>
+  <text x="70" y="150" fill="#33434A" font-size="48" font-weight="700" text-anchor="start">b-In₂S₂Se</text>
+  <text x="72" y="192" fill="#6F7B7C" font-size="26" font-weight="500" text-anchor="start">S–In–S–In–Se</text>
+  <rect x="73" y="244" width="475" height="310" rx="20" fill="#FFFFFF" stroke="#C9D0CC" stroke-width="1.5"/>
+  <circle cx="232" cy="284" r="15" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="281" cy="284" r="15" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="330" cy="284" r="15" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="379" cy="284" r="15" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="428" cy="284" r="15" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="175" y="290" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <circle cx="232" cy="339" r="15" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="281" cy="339" r="15" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="330" cy="339" r="15" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="379" cy="339" r="15" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="428" cy="339" r="15" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="175" y="345" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="232" cy="394" r="15" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="281" cy="394" r="15" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="330" cy="394" r="15" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="379" cy="394" r="15" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="428" cy="394" r="15" fill="#C1AD77" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="175" y="400" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">S</text>
+  <circle cx="232" cy="449" r="15" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="281" cy="449" r="15" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="330" cy="449" r="15" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="379" cy="449" r="15" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="428" cy="449" r="15" fill="#A598AC" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="175" y="455" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">In</text>
+  <circle cx="232" cy="504" r="15" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="281" cy="504" r="15" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="330" cy="504" r="15" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="379" cy="504" r="15" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="428" cy="504" r="15" fill="#93A999" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="175" y="510" fill="#33434A" font-size="18" font-weight="600" text-anchor="end">Se</text>
+  <line x1="629" y1="392" x2="736" y2="392" stroke="#718B99" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <rect x="775" y="257" width="320" height="106" rx="16" fill="#E7EEF0" stroke="#718B99" stroke-width="1.5"/>
+  <text x="935" y="322" fill="#718B99" font-size="32" font-weight="600" text-anchor="middle">理论预测</text>
+  <rect x="775" y="414" width="320" height="106" rx="16" fill="#E9F0EA" stroke="#93A999" stroke-width="1.5"/>
+  <text x="935" y="479" fill="#33434A" font-size="32" font-weight="600" text-anchor="middle">实验实现</text>
+  <line x1="935" y1="367" x2="935" y2="406" stroke="#718B99" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="52" y1="606" x2="1148" y2="606" stroke="#C9D0CC" stroke-width="1" stroke-linecap="round"/>
+  <text x="54" y="630" fill="#6F7B7C" font-size="15" font-weight="400" text-anchor="start">元素层序示意，非原子坐标；原子层颜色在全套图中一致</text>
+</svg>

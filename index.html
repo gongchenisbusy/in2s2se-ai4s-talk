@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-themes="minimal-white" data-theme-base="assets/themes/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>AI 辅助五层 Janus In₂S₂Se 的合成与光伏验证｜研究计划</title>
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" id="theme-link" href="assets/themes/minimal-white.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="tpl-presenter-mode-reveal">
+  <div class="deck">
+
+    <section class="slide slide-cover" data-title="从理论预测到实验实现">
+      <div class="cover-copy">
+        <p class="section-label">AI4S · 二维材料 · 研究计划</p>
+        <h1>从理论预测<br>到实验实现</h1>
+        <p class="cover-subtitle">AI 辅助五层 Janus In₂S₂Se 的<br>合成与光伏验证</p>
+        <div class="cover-rule"></div>
+        <p class="cover-chain">研究背景 <span>→</span> 体系选择 <span>→</span> 研究路径 <span>→</span> 研究目标</p>
+      </div>
+      <figure class="cover-visual">
+        <img src="media/figures/01_cover_layers.svg" alt="五层 b-In₂S₂Se 的 S–In–S–In–Se 元素层序示意，从理论预测指向实验实现">
+      </figure>
+      <aside class="notes">
+        <p>这项研究从一个很具体的问题出发：<strong>理论预测的五层 Janus In₂S₂Se，能否在实验里真正做出来？</strong>这里的“做出来”不只是测到铟、硫、硒三种元素，还要确定它们占据指定的原子层，并能在不同批次重现。</p>
+        <p>报告会先说明理论与实验之间的缺口，再解释为什么选择这个体系，随后介绍两条合成路线和 AI 决策闭环，最后说明怎样验证铁电和光伏功能。整套图中 S、Se、In 采用固定配色，原子点是层序示意，不是原子坐标。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-title="研究背景：三道门槛">
+      <header class="slide-head">
+        <p class="section-label">01 / 研究背景</p>
+        <h2>计算稳定性与实验可达性之间，仍有三道门槛</h2>
+      </header>
+      <div class="main-grid">
+        <figure class="visual-panel">
+          <img src="media/figures/02_three_gates.svg" alt="DFT 候选结构经过反应路径、结构身份和跨批复现三道门槛，才成为可信实验样品">
+        </figure>
+        <div class="side-panel">
+          <p class="side-eyebrow">核心科学问题</p>
+          <p class="side-statement">如何把“局部稳定的理论结构”转化为“层序可信的功能样品”？</p>
+          <div class="side-divider"></div>
+          <p>五层 Janus 材料尤其要回答：<strong>S/Se 是否位于指定原子层</strong>，而不只是总体配比接近目标。</p>
+        </div>
+      </div>
+      <div class="source-line">背景依据：<a href="https://doi.org/10.1002/advs.202520732">Li et al., Adv. Sci. (2026)</a>；<a href="https://doi.org/10.1107/S2052520616007058">Pistor et al., Acta Cryst. B (2016)</a>。</div>
+      <aside class="notes">
+        <p>第一性原理计算告诉我们，这个结构在设定条件下是否局部稳定、可能有什么性质。但实验合成还取决于前驱体、基底、扩散、竞争相和处理损伤。<strong>稳定性和可达性是两个不同的问题。</strong></p>
+        <p>这里把差距压缩为三道门槛：交换反应能否发生在混排与骨架破坏之前；做出的样品是否真有指定的 S/Se 层序；以及这种结构和功能能否跨独立批次保持。后面每一步研究路径，都对应其中一项可检验的门槛。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-title="研究背景：理论结构—功能假说">
+      <header class="slide-head">
+        <p class="section-label">01 / 研究背景</p>
+        <h2>In₂S₂Se 给出明确、尚待实验验证的结构—功能假说</h2>
+      </header>
+      <div class="main-grid main-grid-evidence">
+        <figure class="visual-panel">
+          <img src="media/figures/03_theory_states.svg" alt="理论预测的五层 b-In₂S₂Se 在 WZ′ 和 ZB′ 两态分别具有 2.19 eV 间接带隙和 1.17 eV 直接带隙">
+        </figure>
+        <figure class="evidence-panel">
+          <span class="evidence-tag">文献中的理论结构图</span>
+          <a href="media/literature/li2026_fig1ab_structure.png" target="_blank" rel="noopener">
+            <img src="media/literature/li2026_fig1ab_structure.png" alt="Li 等论文作者版 Fig. 1a–b：b-In₂S₂Se 的 WZ′ 与 ZB′ 结构">
+          </a>
+          <figcaption>Li et al., <i>Advanced Science</i> (2026), Fig. 1a–b，作者版局部。<a href="https://doi.org/10.1002/advs.202520732">DOI</a></figcaption>
+          <p class="evidence-note">右图与带隙均为理论结果；原论文光电流计算含外加偏压。</p>
+        </figure>
+      </div>
+      <aside class="notes">
+        <p>为什么值得选择它？Li 等给出了具体的五层 <strong>S–In–S–In–Se</strong> 构型，以及 WZ′、ZB′ 两种非简并滑移态。正式发表版的 HSE06 带隙分别是 <strong>2.19 eV 间接</strong>和 <strong>1.17 eV 直接</strong>。这形成了结构变化可能影响光电响应的明确假说。</p>
+        <p>右边是原论文作者版的两态结构局部；定量带隙按正式发表版核对。这里必须守住证据边界：理论中的滑移势垒不是合成反应势垒；论文光电流模型使用了外加源漏偏压，不能当作已测得的零偏压光伏响应或器件效率。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-title="体系选择：两种五层母体">
+      <header class="slide-head">
+        <p class="section-label">02 / 体系选择</p>
+        <h2>以 b-In₂S₂Se 为终点，两种五层母体提供实验入口</h2>
+      </header>
+      <div class="main-grid main-grid-evidence">
+        <figure class="visual-panel">
+          <img src="media/figures/04_material_selection.svg" alt="α-In₂Se₃ 与 γ-In₂S₃ 两种五层母体通向目标 b-In₂S₂Se 的元素层序对比">
+        </figure>
+        <div class="evidence-stack">
+          <figure class="evidence-small">
+            <a href="media/literature/si2024_fig3b_monolayer_photo.png" target="_blank" rel="noopener">
+              <img src="media/literature/si2024_fig3b_monolayer_photo.png" alt="Si 等报道的厘米级 α-In₂Se₃ 单层样品照片">
+            </a>
+            <figcaption>α-In₂Se₃ 单层生长先例：<a href="https://doi.org/10.1038/s41467-024-51322-9">Si et al., Nat. Commun. (2024), Fig. 3b</a>。</figcaption>
+          </figure>
+          <figure class="evidence-small">
+            <a href="media/literature/guillemeney2022_fig1_tem_nanoribbons.png" target="_blank" rel="noopener">
+              <img src="media/literature/guillemeney2022_fig1_tem_nanoribbons.png" alt="Guillemeney 等报道的 γ-In₂S₃ 纳米带 TEM 图，带比例尺">
+            </a>
+            <figcaption>γ-In₂S₃ 纳米带先例：<a href="https://doi.org/10.1021/acs.chemmater.2c02623">Guillemeney et al., Chem. Mater. (2022), Fig. 1</a>，作者稿局部。</figcaption>
+          </figure>
+        </div>
+      </div>
+      <aside class="notes">
+        <p>目标始终是五层 b-In₂S₂Se。第一种入口是 α-In₂Se₃：已有大面积单五层生长先例，可以先研究最外层 Se 换成 S，但第一步得到的 In₂SSe₂ 只是<strong>中间目标</strong>。如果想进入最终组成，还必须解决中央层替换。</p>
+        <p>第二种入口是 γ-In₂S₃：从元素层序看，单侧硒化可能更直接。但这里的难点是母体晶相、In 位配准和连续单五层样品能否保持。右下文献图展示的是<strong>纳米带</strong>，不能当成已经成熟的大面积单层薄膜工艺。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-title="研究路径：双路线合成">
+      <header class="slide-head">
+        <p class="section-label">03 / 研究路径</p>
+        <h2>两条交换路线并行，先判断五层骨架能否保持</h2>
+      </header>
+      <div class="main-grid main-grid-evidence">
+        <figure class="visual-panel">
+          <img src="media/figures/05_dual_synthesis_routes.svg" alt="路线 A 从 α-In₂Se₃ 逐层硫化，路线 B 从 γ-In₂S₃ 单侧硒化，两条路线均需排除混排和骨架损伤">
+        </figure>
+        <figure class="evidence-panel evidence-vertical">
+          <span class="evidence-tag">可迁移的机制先例</span>
+          <a href="media/literature/lu2017_fig1d_janus_cross_section.png" target="_blank" rel="noopener">
+            <img src="media/literature/lu2017_fig1d_janus_cross_section.png" alt="Lu 等报道的 MoSSe Janus 单层截面 STEM 图">
+          </a>
+          <figcaption>Lu et al., <i>Nature Nanotechnology</i> (2017), Fig. 1d，局部。<a href="https://doi.org/10.1038/nnano.2017.100">DOI</a></figcaption>
+          <p class="evidence-note">图中为 MoSSe，并非 In₂S₂Se；只能借鉴位点选择性思路。</p>
+        </figure>
+      </div>
+      <aside class="notes">
+        <p>路线 A 先利用更成熟的 Se 母体验证外层硫化，再看中央层是否真的可达。第二步画成虚线，因为只有计算与中断实验都支持时才值得继续。路线 B 从 S 母体出发，尝试单侧 Se 交换，但首先必须证明母体与目标结构兼容。</p>
+        <p>两条路线都要比较三种竞争事件：<strong>选择性交换、S/Se 混排、五层骨架损伤</strong>。计算端做反应路径排序，实验端做分时中断样品。右侧 MoSSe 截面是 Janus 层位置换的文献先例，不能把它的温度、等离子剂量或基底机制直接照搬到铟硫硒体系。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-title="研究路径：AI 决策闭环">
+      <header class="slide-head">
+        <p class="section-label">03 / 研究路径</p>
+        <h2>AI 同时选择下一次合成与下一项关键结构表征</h2>
+      </header>
+      <div class="main-grid">
+        <figure class="visual-panel">
+          <img src="media/figures/06_ai_decision_loop.svg" alt="候选条件、独立合成、快速筛选、结构判别、数据标签与主动学习模型构成闭环">
+        </figure>
+        <div class="side-panel">
+          <p class="side-eyebrow">AI 决策对象</p>
+          <p class="side-statement">下一炉参数，或对现有样品补做一次最有信息量的测量。</p>
+          <div class="side-divider"></div>
+          <p><strong>保留失败与“证据不足”</strong>，按独立炉次比较策略效率，而非只追求 Raman/PL 峰值。</p>
+        </div>
+      </div>
+      <div class="source-line">方法先例：<a href="https://doi.org/10.1126/sciadv.abg4930">Ament et al., Sci. Adv. (2021)</a>；<a href="https://doi.org/10.1038/s41524-022-00859-8">Wakabayashi et al., npj Comput. Mater. (2022)</a>；<a href="https://doi.org/10.1021/acsami.4c15275">Zhang et al., ACS AMI (2024)</a>。</div>
+      <aside class="notes">
+        <p>AI 的工作不是泛泛地“优化生长”，而是在真实实验成本下做下一步决策。每一炉先进行 AFM、Raman 和 PL 等较快的筛选，再把候选和容易误判的反例送入更贵的 XPS、衍射或截面 STEM。结果分成目标、失败和<strong>证据不足</strong>，未知样品不硬当负例。</p>
+        <p>主动学习模型随后可以建议一组新反应条件，也可以建议给现有样品追加一项关键表征。为证明 AI 确实节省资源，会在相同预算下前瞻比较专家设计、普通贝叶斯优化和这套结构证据驱动策略，终点是达到独立结构确证所需的炉次、表征与成本。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-title="研究路径：结构到光电验证">
+      <header class="slide-head">
+        <p class="section-label">03 / 研究路径</p>
+        <h2>先确证层序与可翻转态，再检验零偏压光响应</h2>
+      </header>
+      <div class="main-grid">
+        <figure class="visual-panel">
+          <img src="media/figures/07_evidence_gates.svg" alt="结构确证、极化切换、零偏压光电验证依次推进；响应曲线只是预期判据的示意">
+        </figure>
+        <div class="side-panel">
+          <p class="side-eyebrow">证据顺序</p>
+          <ol class="small-steps">
+            <li>元素层位、厚度和 In 配位相互一致</li>
+            <li>两态可逆切换，并排除陷阱与离子迁移</li>
+            <li>同器件写入前后比较零偏压响应</li>
+          </ol>
+          <div class="side-divider"></div>
+          <p class="tiny-caveat">图中曲线是判据示意，不是已获得的数据。</p>
+        </div>
+      </div>
+      <div class="source-line">理论预测：<a href="https://doi.org/10.1002/advs.202520732">Li et al., Adv. Sci. (2026)</a>；器件测试参照：<a href="https://doi.org/10.1039/D4NR05317F">Chen et al., Nanoscale (2025)</a>。</div>
+      <aside class="notes">
+        <p>这里的顺序不能颠倒。测到接近目标的总体成分，或者出现一条新 Raman 峰，都不能单独证明五层目标结构。先要把 S/Se 层位、单五层厚度、In 位配准和相结构用正交证据对上，再检查不同批次是否一致。</p>
+        <p>结构可靠后，才进入两态极化切换，排除电荷陷阱、离子迁移和接触势垒造成的假滞回。最后做同器件写入前后的零偏压短路电流、开路电压与光谱响应。右侧两条曲线仅表示“若两态响应不同，需要检验什么”，不是预测的具体数据，更不是已有实验结果。</p>
+      </aside>
+    </section>
+
+    <section class="slide" data-title="研究目标：四阶段内容">
+      <header class="slide-head">
+        <p class="section-label">04 / 研究目标</p>
+        <h2>研究内容按四个验证阶段递进</h2>
+      </header>
+      <figure class="wide-visual">
+        <img src="media/figures/08_research_stages.svg" alt="研究内容四阶段：母体与路径、选择性交换、层序确证、功能与 AI 对照，按证据门槛推进">
+      </figure>
+      <p class="wide-takeaway">前一阶段的结构证据成立，才进入下一阶段的功能判断。</p>
+      <aside class="notes">
+        <p>研究内容按证据门槛组织。第一阶段复现并确认五层母体，结合计算筛选反应路径；第二阶段通过分时交换样品识别选择性、混排和损伤；第三阶段争取用正交表征确认目标层序，并检查跨批次复现。</p>
+        <p>只有拿到可靠目标样品，才进入两态极化和光电验证。AI 决策贯穿各阶段，最后与常规策略做公平对照。即使目标没有形成，也需要通过重复实验与反应计算定位限制步骤，形成有证据支持的可达性边界。这一页只表示研究任务与先后门槛。</p>
+      </aside>
+    </section>
+
+    <section class="slide slide-close" data-title="研究目标：最终要回答的问题">
+      <header class="slide-head">
+        <p class="section-label">04 / 研究目标</p>
+        <h2>最终回答：理论目标是否可达，以及为什么</h2>
+      </header>
+      <figure class="wide-visual close-visual">
+        <img src="media/figures/09_expected_outcomes.svg" alt="材料结果、功能结果与 AI 决策方法共同连接预测稳定、实验可达和功能可信">
+      </figure>
+      <p class="closing-sentence">材料、功能和方法三类证据，共同缩小二维材料理论与实验之间的距离。</p>
+      <aside class="notes">
+        <p>最后回到研究问题：理论中的 b-In₂S₂Se 到底能否在实验里形成指定层序？如果可以，就继续验证滑移铁电和光伏响应是否真正耦合；如果暂时做不到，也要确定是母体不匹配、中央位点不可达，还是混排和损伤抢先发生。</p>
+        <p>第三类结果来自方法本身：在相同实验预算下，AI 是否让我们更快得到可靠结构证据，并把失败变成可用的反应边界信息。希望最终交付的是一套能迁移到其他理论预测二维材料的可达性决策流程。谢谢。</p>
+      </aside>
+    </section>
+
+  </div>
+  <footer class="deck-footer">
+    <span>AI4S × 二维材料研究计划</span>
+    <span class="keyboard-hint">← → 翻页 · S 讲者视图 · F 全屏</span>
+    <span class="slide-number" data-current="1" data-total="9"></span>
+  </footer>
+  <script src="assets/runtime.js"></script>
+</body>
+</html>
